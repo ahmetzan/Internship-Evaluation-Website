@@ -1,0 +1,318 @@
+#bg1,
+#bg2 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#bg1 {
+	background: -webkit-linear-gradient(top, rgb(20, 1, 24), rgb(38, 22, 52));
+	background: linear-gradient(top, rgb(201, 26, 193), rgb(10, 10, 10));
+}
+
+#bg2 {
+	opacity: 0;
+	background: -webkit-linear-gradient(top, rgb(201, 26, 193), rgb(0, 20, 45));
+	background: linear-gradient(top, rgb(25, 50, 95), rgb(0, 20, 45));
+}
+
+p {
+	font-family: "Helvetica";
+	font-size: 18px;
+	color: #CCCCCC;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+h1 {
+	font-family: "Helvetica";
+	font-size: 28px;
+	color: #EEEEEE;
+}
+
+.title {
+	position: absolute;
+	display: inline-block;
+	top: 15%;
+	width: 29%;
+	right: 35%;
+	text-align: center;
+	-webkit-transition: opacity 1s, right 1s;
+	transition: opacity 1s, right 1s;
+}
+
+.form {
+	position: absolute;
+	display: inline-block;
+	font-size: 14px;
+	font-family: "Helvetica";
+	line-height: 40px;
+	color: #CCCCCC;
+	top: 35%;
+	width: 100%;
+	text-align: center;
+}
+
+.inputBox {
+	position: absolute;
+	width: 17%;
+	right: 40%;
+	opacity: 1;
+	padding: 12px 16px;
+	font-size: 16px;
+	font-family: "Helvetica";
+	color: #BBBBBB;
+	border-radius: 8px;
+	border: solid 2px;
+	border-color: #EEEEEE;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-transition: border-width 0.25s, border-color 0.25s, background-color 0.5s, right 1s, opacity 1s;
+	transition: border-width 0.25s, border-color 0.25s, background-color 0.5s, right 1s, opacity 1s;
+}
+
+.inputBox:focus {
+	outline: none;
+	border-color: #3388EE;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.name {
+	position: absolute;
+	width: 30%;
+	opacity: 1;
+	right: 35%;
+	-webkit-transition: opacity 1s, right 1s, width 1s;
+	transition: opacity 1s, right 1s, width 1s;
+}
+
+#name1 {
+	top: -10%;
+}
+
+#name2 {
+	top: 32%;
+}
+
+.error {
+	color: #FF3399;
+	font-size: 14px;
+}
+
+.submitButton {
+	position: absolute;
+	width: 15%;
+	right: 42%;
+	opacity: 1;
+	font-size: 18px;
+	font-family: "Helvetica";
+	text-align:center;
+	color: #EEEEEE;
+	padding: 18px 60px;
+	border-radius: 16px;
+	border: solid 2px;
+	border-color: #EEEEEE;
+	background-color: rgba(0, 0, 0, 0.1);
+	-webkit-transition: color 0.5s, border-color 0.5s, background-color 0.5s, right 1s, opacity 1s;
+	transition: color 0.5s, border-color 0.5s, background-color 0.5s, right 1s, opacity 1s;
+}
+
+.submitButton:hover {
+	color: #3388EE;
+	border-color: #3388EE;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.message {
+	position: absolute;
+	display: inline-block;
+	font-family: "Helvetica";
+	font-size: 18px;
+	color: #EEEEEE;
+	width: 100%;
+	text-align: center;
+	top: 30%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: visibility 0s, opacity ease-out 1s, top ease-out 1s;
+	transition: visibility 0s, opacity ease-out 1s, top ease-out 1s;
+	-webkit-backface-visibility: hidden;
+}
+
+.particle {
+	opacity: 0;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	-webkit-animation: particleAnim 3s ease-in-out infinite;
+	animation: particleAnim 3s ease-in-out infinite;
+	border-radius: 100%;
+}
+
+@-webkit-keyframes particleAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-0%);
+	}
+	15% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-1500%);
+	}
+}
+
+@keyframes particleAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-0%);
+	}
+	25% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-1500%);
+	}
+}
+
+
+.card {
+	margin-bottom: 20px;
+	border: none
+}
+
+.box {
+	width: 500px;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -5%);
+
+
+	background: rgba(76, 90, 106, 0.09);
+;
+	text-align: center;
+	transition: 0.25s;
+	margin-top: 150px
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid rgb(164, 178, 178);
+	padding: 10px 10px;
+	width: 250px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s
+}
+
+.box h1 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+	width: 300px;
+	border-color: rgb(100, 171, 135)
+}
+
+.box input[type="submit"] {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid rgb(100, 171, 135);
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+	background: #2ecc71
+}
+
+.forgot {
+	text-decoration: underline
+}
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px
+}
+
+.social-network a.icoFacebook:hover {
+	background-color: #3B5998
+}
+
+.social-network a.icoTwitter:hover {
+	background-color: #33ccff
+}
+
+.social-network a.icoGoogle:hover {
+	background-color: #BD3518
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+	color: #fff
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+	color: #44BCDD
+}
+
+.social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 20px
+}
+
+.social-circle li i {
+	margin: 0;
+	line-height: 50px;
+	text-align: center
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+	transform: rotate(360deg);
+	transition: all 0.2s
+}
+
+.social-circle i {
+	color: #fff;
+	transition: all 0.8s;
+	transition: all 0.8s
+}
