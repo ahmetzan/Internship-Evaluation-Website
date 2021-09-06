@@ -1,6 +1,6 @@
 # Internship-Evaluation-Website
 
-<!-- 
+
 --ENG--
 On my website which  I developed for Internship Evaluation
 - admin registration / login screen
@@ -18,4 +18,4 @@ Staj Değerlendirmek için geliştirdiğim web sitemde
 - stajyer Kayıt ekranı
 -stajyer listeleme ekranı bulunmaktadır
 *Stajyer listeleme ekranında stajyer silebilir, değerlendirebilir veya güncelleyebilirsiniz.
-**Stajyer Değerlendirme ekranında değerlendirme kriterlerini listeleyebilir, kriter ekleyebilir ve silebilirsiniz. Aynı zamanda öğrenciyi değerlendirebilirsiniz. -->
+**Stajyer Değerlendirme ekranında değerlendirme kriterlerini listeleyebilir, kriter ekleyebilir ve silebilirsiniz. Aynı zamanda öğrenciyi değerlendirebilirsiniz.
